@@ -1,0 +1,36 @@
+package Ders01;
+
+import java.util.Scanner;
+
+public class basmakToplami {
+    public static void main(String[] args) {
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("sayı giriniz");
+        int number = input.nextInt();
+        int basValue;
+
+        int toplam=0;
+
+
+
+
+        while (number != 0) {
+
+
+            basValue = number % 10;
+
+            toplam+=basValue;
+
+
+
+
+            number /= 10;
+
+
+        }
+        System.out.println(toplam);
+    }
+
+}
